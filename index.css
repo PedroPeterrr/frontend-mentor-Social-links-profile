@@ -1,0 +1,123 @@
+:root {
+    --Primary: hsl(0, 0%, 8%);
+    --Secondary: hsl(0, 0%, 20%);
+    --Tertiary: hsl(0, 0%, 12%);
+
+    --white: hsl(0, 0%, 100%);
+    --text: hsl(75, 94%, 57%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--Tertiary);
+    border-radius: 10px;
+    padding: 24px;
+    width: 355px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name {
+    color: var(--white);
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.place {
+    color: var(--text);
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.title {
+    color: var(--white);
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 150%;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--Secondary);
+    border-radius: 5px;
+    padding: 12.5px;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;;
+}
+
+.btn:hover{
+    background-color: var(--text);
+    color: var(--Primary);
+}
+
+.attribution { 
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 11px; text-align: center; 
+    margin: 5px;
+}
+
+.attribution a { 
+    color: var(--text);
+    text-decoration: none;;
+}
+
+@media (max-width: 375px) {
+    
+    .card {
+        max-width: 325px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 100%;
+    }
+    
+}
